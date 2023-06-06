@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -21,13 +22,30 @@
                 <div class="header__logo">
                     <img src="/img/grill.png" alt="logo hamburguesa">
                 </div>
+                <!-- 
+                <nav class="header__navegacion" id="menu-navegacion">
+                    <ul class="header__navegacion__menu">
+                        <li><a href="#" class="navegacion__link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="navegacion__link">Nuestra Carta</a>
+                            <ul>
+                                <li><a href="#" class="navegacion__link">Entrantes</a></li>
+                                <li><a href="#" class="navegacion__link">Hamburguesas</a></li>
+                                <li><a href="#" class="navegacion__link">Bebidas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="navegacion__link">Contactanos</a></li>
+                    </ul>
+                </nav>-->
+                <div class="topnav" id="myTopnav">
+                    <a href="#home"><span></span></a>
+                    <a href="/index.html#about">Sobre Nosotros</a>
+                    <a href="/index.html#menu">Nuestra Carta</a>
+                    <a href="/index.html#contact">Contactanos</a>
 
-                <nav class="navegacion">
-                    <a href="#" class="navegacion__link">Sobre Nosotros</a>
-                    <a href="#" class="navegacion__link">Nuestra Carta</a>
-                    <a href="#" class="navegacion__link">Donde Estamos</a>
-                    <a href="#" class="navegacion__link">Contactanos</a>
-                </nav>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
 
             <div class="header__grid">
@@ -46,7 +64,7 @@
     </header>
 
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <div class="about__text">
                 <h2>Sobre Nosotros </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel, aliquam illo temporibus repellendus
@@ -70,11 +88,25 @@
 
 
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <div class="menu__contenedor">
             <h2 class="menu__heading">Nuestra Carta</h2>
 
             <div class="menu__grid">
+
+
+                <div class="menu__grid__container">
+                    <img class="menu__image" src="img/entrantes.png" alt="app nucleus">
+                    <div>
+                        <h2 class="menu__grid__heading">Entradas</h2>
+                        <p class="menu__grid__texto">Nachos Tex-MEx:Carne picada,Patatas Pulled Pork,Croquetas de Jamón
+                            Caseras,Tabla de
+                            Quesos e Ibericos</p>
+                        <p class="menu__grid__price">-€8.70</p>
+                    </div>
+                </div>
+
+
                 <div class="menu__grid__container">
                     <img class="menu__image" src="img/chiken-burguer.png" alt="app nucleus">
                     <div>
@@ -122,32 +154,97 @@
                 </div>
 
                 <div class="menu__grid__container">
-                    <img class="menu__image" src="img/egg-burguer.png" alt="app nucleus">
+                    <img class="menu__image" src="img/refrescos.png" alt="app nucleus">
                     <div>
-                        <h2 class="menu__grid__heading">Veggie burguer</h2>
-                        <p class="menu__grid__texto">200 gramos vaca madurada (45 días),huevo frito,queso
-                            Monterrey,bacon
-                            crunchi,cebolla caramelizada y la salsa estrella .
-                            Servida en nuestro pan artesanal Brioche .</p>
-                        <p class="menu__grid__price">-€12.95</p>
+                        <h2 class="menu__grid__heading">Bebidas</h2>
+                        <p class="menu__grid__texto">Refrescos:Coca Cola, Nestea, Aquarius Limón,
+                            Trina,Fanta,Tónica,Agua,Zumos.Cervezas:Mahou Leffe, Fonder,Beltic,Tinto de Verano,Sangria
+                        </p>
+                        <p class="menu__grid__price">-€3.70</p>
                     </div>
                 </div>
 
-                <div class="menu__grid__container">
-                    <img class="menu__image" src="img/egg-burguer.png" alt="app nucleus">
-                    <div>
-                        <h2 class="menu__grid__heading">Clasica</h2>
-                        <p class="menu__grid__texto">200 gr vaca madurada (45 días), hojas de roble, tomate, pepinillo,
-                            cebolla frita, doble de queso americano , doble de
-                            bacon y huevo. En nuestro pan Brioche.</p>
-                        <p class="menu__grid__price">- €12.95</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+    <section class="contenido-principal contenedor " id="contact">
+        <h2 class="text-center">Contacto</h2>
+        <div class="centrar-map">
+            <form class="formulario">
+                <fieldset>
+                    <legend>Tus Datos</legend>
 
+                    <div class="campo">
+                        <label for="nombre">Nombre: </label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre" required>
+                    </div>
 
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tel">Teléfono:</label>
+                        <input id="tel" type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label for="tel">Mensaje:</label>
+                        <textarea rows="10" cols="20"></textarea>
+                    </div>
+
+                </fieldset>
+                <input class="btn" type="submit" value="Enviar Formulario">
+            </form>
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div class="map__item" id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <a href="https://1map.com/es/map-embed">1 Map</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <a href="index.html"><img class=" footer-logo" src="/img/grill.png" alt=" logo-header">
+        </a>
+        <div class="footer-text">
+            <p>Copyright. Todos los derechos reservados.</p>
+            <p>AvenidaConstitucion 6 - Madrid
+                +3423 456 7890
+                mail@example.com</p>
+        </div>
+
+        <div class="footer-redes">
+            <a href="https://twitter.com/Larango07" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                </svg></a>
+            <a href="https://www.linkedin.com/in/tatianaarango/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg></a>
+            <a href="https://www.instagram.com/ltatianarangoc/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg></a>
+            <a href=""></a>
+        </div>
+
+    </footer>
 
     <script src="scripts/script.js"></script>
 </body>
