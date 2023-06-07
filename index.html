@@ -18,41 +18,32 @@
 <body>
     <header class="header">
         <div class="header__contenedor">
+
+            <!--------------------- Header logo y barra de menú ------------------------->
             <div class="header__barra">
+
+                <!-- Logo de la web -->
                 <div class="header__logo">
                     <img src="/img/grill.png" alt="logo hamburguesa">
                 </div>
-                <!-- 
-                <nav class="header__navegacion" id="menu-navegacion">
-                    <ul class="header__navegacion__menu">
-                        <li><a href="#" class="navegacion__link">Sobre Nosotros</a></li>
-                        <li><a href="#" class="navegacion__link">Nuestra Carta</a>
-                            <ul>
-                                <li><a href="#" class="navegacion__link">Entrantes</a></li>
-                                <li><a href="#" class="navegacion__link">Hamburguesas</a></li>
-                                <li><a href="#" class="navegacion__link">Bebidas</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" class="navegacion__link">Contactanos</a></li>
-                    </ul>
-                </nav>-->
+
+                <!-- Menu de Navegación -->
                 <div class="topnav" id="myTopnav">
                     <a href="#home"><span></span></a>
                     <a href="/index.html#about">Sobre Nosotros</a>
                     <a href="/index.html#menu">Nuestra Carta</a>
                     <a href="/index.html#contact">Contactanos</a>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+                    <a href="#" class="icon">
+                        <i class=" fa fa-bars"></i>
                     </a>
                 </div>
             </div>
-
+            <!------------- Contenedor con texto, imagén y boton para reservar ----------------->
             <div class="header__grid">
                 <div class="header__texto">
                     <h1 class="header__heading">Disfruta de las mejores Hamburguesas a la parrilla <span>El placer de lo
                             exquisito</span></h1>
-                    <a class="header__boton" href="#">Reservar</a>
+                    <a class="header__boton" href="index.html#contact">Reservar</a>
                 </div>
 
                 <div class="header__grafico">
@@ -64,6 +55,8 @@
     </header>
 
     <main>
+        <!------------- Contenedor con presentación y carrusel de imágenes----------------->
+
         <div class="about" id="about">
             <div class="about__text">
                 <h2>Sobre Nosotros </h2>
@@ -74,7 +67,6 @@
                     non.</p>
             </div>
             <div class="about__slider">
-
                 <img class="about__slider__images" src="/img/angus-burguer.png" alt="">
                 <img class="about__slider__images" src="/img/veggie-burguer.png" alt="">
                 <img class="about__slider__images" src="/img/cheese-burguer.png" alt="">
@@ -89,6 +81,7 @@
 
 
     <section class="menu" id="menu">
+        <!----------------------------------- Carta de menu --------------------------->
         <div class="menu__contenedor">
             <h2 class="menu__heading">Nuestra Carta</h2>
 
@@ -168,54 +161,56 @@
             </div>
         </div>
     </section>
-    <section class="contenido-principal contenedor " id="contact">
-        <h2 class="text-center">Contacto</h2>
-        <div class="centrar-map">
-            <form class="formulario">
-                <fieldset>
-                    <legend>Tus Datos</legend>
+    <!------------------       Formulario de contacto ------------------------------>
+    <section class="container contenedor " id="contact">
+        <h2 class="container__text">Contacto</h2>
+        <p class="container__text">Puedes rellenar nuestro formulario para reservas en nuestro restaurante.
+        </p>
+        <p class="container__text"><small class="req">Todos los campos marcados con <span class="ast">*</span> son
+                obligatorios.</small></p>
 
-                    <div class="campo">
-                        <label for="nombre">Nombre: </label>
-                        <input id="nombre" type="text" placeholder="Tu Nombre" required>
-                    </div>
+        <form class="container__form">
+            <fieldset>
+                <legend>Tus Datos</legend>
 
-                    <div class="campo">
-                        <label for="email">E-mail:</label>
-                        <input id="email" type="email" placeholder="Tu Email">
-                    </div>
+                <div class="container__form__info">
+                    <label for="nombre">Nombre:<span class="ast">*</span> </label>
+                    <input id="nombre" type="text" placeholder="Tu Nombre" required>
+                </div>
 
-                    <div class="campo">
-                        <label for="tel">Teléfono:</label>
-                        <input id="tel" type="tel" placeholder="Tu Teléfono">
-                    </div>
+                <div class="container__form__info">
+                    <label for="email">E-mail:<span class="ast">*</span></label>
+                    <input id="email" type="email" placeholder="Tu Email" required>
+                </div>
 
-                    <div class="campo">
-                        <label for="tel">Mensaje:</label>
-                        <textarea rows="10" cols="20"></textarea>
-                    </div>
+                <div class="container__form__info">
+                    <label for="tel">Teléfono:<span class="ast">*</span></label>
+                    <input id="tel" type="tel" placeholder="Tu Teléfono" required>
+                </div>
 
-                </fieldset>
-                <input class="btn" type="submit" value="Enviar Formulario">
-            </form>
-            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                <div class="map__item" id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                <a href="https://1map.com/es/map-embed">1 Map</a>
-            </div>
-        </div>
+                <div class="container__form__info">
+                    <label for="tel">Mensaje:<span class="ast">*</span></label>
+                    <textarea rows="10" cols="20" required></textarea>
+                </div>
+            </fieldset>
+
+            <input class="container__form__btn" type="submit" value="Enviar Formulario">
+            <p class="text-center text"></p>
+        </form>
+
+
     </section>
     <footer class="footer">
-
-        <a href="index.html"><img class=" footer-logo" src="/img/grill.png" alt=" logo-header">
+        <a href="index.html"><img class=" footer__logo" src="/img/grill.png" alt=" logo-header">
         </a>
-        <div class="footer-text">
+        <div class="footer__text">
             <p>Copyright. Todos los derechos reservados.</p>
             <p>AvenidaConstitucion 6 - Madrid
                 +3423 456 7890
                 mail@example.com</p>
         </div>
 
-        <div class="footer-redes">
+        <div class="footer__redes">
             <a href="https://twitter.com/Larango07" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
