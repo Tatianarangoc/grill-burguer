@@ -22,18 +22,17 @@ setInterval(function () {
 
 const icon = document.querySelector(".icon");
 icon.addEventListener("click", (e) => {
-    console.log("wwwww")
     e.preventDefault();
-    myFunction();
-    console.log(icon);
+    menu_navegacion();
+
 })
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+function menu_navegacion() {
+    var nav = document.getElementById("myTopnav");
+    if (nav.className === "topnav") {
+        nav.className += " responsive";
     } else {
-        x.className = "topnav";
+        nav.className = "topnav";
     }
 }
 

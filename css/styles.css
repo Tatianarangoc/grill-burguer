@@ -101,12 +101,10 @@ img {
 
 }
 
-
-
-
 .topnav .icon {
     display: none;
 }
+
 
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
@@ -118,9 +116,7 @@ img {
         display: block;
 
     }
-}
 
-@media screen and (max-width: 768px) {
     .topnav.responsive {
         position: relative;
     }
@@ -136,6 +132,7 @@ img {
         display: block;
         text-align: left;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -192,7 +189,7 @@ img {
 
 }
 
-/*------------------------Carrusel----------------*/
+/*----------------------------------------------Carrusel----------------*/
 .about__slider {
     flex: 50%;
     overflow: hidden;
