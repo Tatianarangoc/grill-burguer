@@ -192,6 +192,18 @@ a {
 
 }
 
+.about__text h2 {
+    color: var(--primario);
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.about__text p {
+    margin: 2rem;
+
+}
+
 /*----------------------------------------------Carrusel----------------*/
 .about__slider {
     flex: 50%;
@@ -238,6 +250,7 @@ a {
 .menu__heading {
     color: var(--primario);
     text-align: center;
+    font-size: xx-large;
 }
 
 .menu__grid {
