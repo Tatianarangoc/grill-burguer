@@ -301,6 +301,7 @@ a {
 @media(min-width: 768px) {
     .menu__grid__texto {
         font-size: 2rem;
+        margin: 0 0;
     }
 
     .menu__grid__container {
