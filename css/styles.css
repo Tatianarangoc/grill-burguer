@@ -346,7 +346,7 @@ a {
 
 .container__form {
     max-width: 60rem;
-    margin: 0 1rem;
+    margin: 0 0;
     width: 100%;
 }
 
@@ -355,7 +355,7 @@ a {
 .container__form fieldset {
     border: 1px solid var(--negro);
     margin-bottom: 2rem;
-    align-items: center;
+    align-items: start;
 }
 
 .container__form legend {
