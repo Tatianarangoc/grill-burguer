@@ -345,7 +345,8 @@ a {
 .container__form {
     max-width: 60rem;
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
+    align-items: center;
 }
 
 .container__form fieldset {
@@ -401,6 +402,11 @@ a {
 }
 
 @media (min-width: 768px) {
+    .container__form {
+
+        width: 100%;
+    }
+
     .container__form__btn {
         width: auto;
     }
