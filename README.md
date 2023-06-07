@@ -6,7 +6,7 @@ In this repository you can find the files generated for the Front selection proc
 
 ## 📝 Requirements
 
-The exercise consists on developing a ** Burguer single page**using the following **elements**:
+The exercise consists on developing a **Burguer single page** using the following **elements**:
 
 - **Html**
 - **Css**
