@@ -232,6 +232,7 @@ a {
     height: 130px;
     width: 200px;
     border-radius: 15px;
+    margin-top: 1rem;
 }
 
 .menu__heading {
