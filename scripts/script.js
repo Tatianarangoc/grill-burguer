@@ -40,9 +40,27 @@ function menu_navegacion() {
 /*------------------------Evento que valida el formulario-------------------*/
 
 const btn = document.querySelector(".container__form__btn");
+
+
 btn.addEventListener("click", (e) => {
     e.preventDefault();
-    document.querySelector(".text").innerHTML = "Hemos recibido su mensaje, muy pronto confirmaremos su reserva";
-    document.querySelector(".text").style.background = "#000"
-    console.log(btn)
+    required_info()
+
+
+
+
 })
+function required_info() {
+    const nombre = document.getElementById("nombre")
+    const email = document.getElementById("email")
+    const tel = document.getElementById("tel")
+    const text = document.getElementById("text")
+    if (nombre.value === "" || email.value === "" || tel.value === "" || text.value === "") {
+        document.querySelector(".msj").innerHTML = "Debe rellenar todos los campos"
+    } else {
+        document.querySelector(".msj").innerHTML = ""
+        document.querySelector(".text").innerHTML = "Hemos recibido su mensaje, muy pronto confirmaremos su reserva";
+        document.querySelector(".text").style.background = "#000"
+    }
+
+}
