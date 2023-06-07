@@ -19,21 +19,16 @@ The page contains the following sections:
 - Menu section with a list of burgers and their prices.
 - Footer with links to social networks.
 
-##🛠️ Technical requirements
--The website is fully responsive and adapt to different screen sizes
--Made with Flexbox and CSS Grid.
--Made transition with CSS
--The css must is written in BEM
--The navigation menu is functional (opening and closing in mobile and tablet)
+##🛠️ Technical requirements -**The website is fully responsive and adapt to different screen sizes - Made with Flexbox and CSS Grid. -**Made transition with CSS -\*\*The css must is written in BEM
+
+- The navigation menu is functional (opening and closing in mobile and tablet)
 
 ##🏗️ Building Process
 I started reading the requirement and understood what I had to do, I continued to do the HTML structure and then I built the files in JavaScript, images and styles, and lastly I added a normalize extention to help the browsers suport with the styles I added.
 
-##🧐What I've learned
--To fully combine HTML5, CSS3 and Javascript into a project
--To work with empty arrays, as well as pushing and storing data in them
--To practice BEM
--To practice CSS transitions to improve the user's experience
+##🧐What I've learned - **To fully combine HTML5, CSS3 and Javascript into a project - **To work with empty arrays, as well as pushing and storing data in them - **To practice BEM - **To practice CSS transitions to improve the user's experience
 
 ##🤯Some Issues
 The construction the functional menu, and carrusel, took me a bit more time because I needed to read the documentation about how to make that.
+
+> **NOTE:** Direct link to the project by clicking on the following **[link](https://tatianarangoc.github.io/grill-burguer/)**
