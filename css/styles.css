@@ -346,7 +346,7 @@ a {
 
 .container__form {
     max-width: 60rem;
-    margin: 0 0;
+    margin: 0 1rem;
     width: 100%;
 }
 
@@ -372,10 +372,7 @@ a {
 }
 
 .container__form__info {
-
     margin-bottom: 2rem;
-
-
     display: flex;
     flex-direction: column;
 }
