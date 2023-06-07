@@ -293,7 +293,7 @@ a {
 .menu__grid__price {
     color: var(--primario);
     font-weight: 700;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -310,6 +310,11 @@ a {
 
     .menu__grid__container:hover {
         transform: scale(1.1);
+    }
+
+    .menu__grid__price {
+
+        text-align: right;
     }
 }
 
