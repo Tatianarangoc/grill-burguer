@@ -346,8 +346,8 @@ a {
 
 .container__form {
     max-width: 60rem;
-    margin: 0 1rem;
-
+    margin: 0 0;
+    width: 100%;
 }
 
 
@@ -355,7 +355,7 @@ a {
 .container__form fieldset {
     border: 1px solid var(--negro);
     margin-bottom: 2rem;
-    width: 80%;
+
     align-items: center;
 }
 
@@ -381,12 +381,13 @@ a {
     flex-basis: 10rem;
 }
 
-.container__form__info input:not([type="radio"]),
+.container__form__info input,
 .container__form__info textarea,
 .container__form__info select {
     flex: 1;
     border: 1px solid var(--primario);
     padding: 0.5rem;
+
 }
 
 .container__form__btn {
