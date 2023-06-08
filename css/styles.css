@@ -366,7 +366,7 @@ a {
 
 
 .container__form fieldset {
-    border: 1px solid var(--negro);
+    border: 1px solid var(--primario);
     margin-bottom: 2rem;
     align-items: start;
 }

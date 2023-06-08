@@ -55,9 +55,14 @@ function required_info() {
     const email = document.getElementById("email")
     const tel = document.getElementById("tel")
     const text = document.getElementById("text")
+    const emailvalidation = /^(.+@.+..+)$/;
     if (nombre.value === "" || email.value === "" || tel.value === "" || text.value === "") {
         document.querySelector(".msj").innerHTML = "Debe rellenar todos los campos"
-    } else {
+    } else if (!emailvalidation.test(email.value)) {
+        document.querySelector(".msj").innerHTML = "Debe ingressar un email valido"
+    }
+
+    else {
         document.querySelector(".msj").innerHTML = ""
         document.querySelector(".text").innerHTML = "Hemos recibido su mensaje, muy pronto confirmaremos su reserva";
         document.querySelector(".text").style.background = "#000"
