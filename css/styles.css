@@ -302,31 +302,41 @@ a {
 
 
 @media(min-width: 768px) {
+    .menu__grid {
+        grid-template-columns: 50% 50%;
+        gap: 1rem;
+        margin: auto 1rem;
+    }
+
     .menu__grid__texto {
         font-size: 2rem;
-        margin: 0 0;
+        margin: 1rem 2rem;
     }
 
     .menu__grid__container {
-        padding: 3rem;
-        width: 100%;
-    }
-
-    .menu__grid__container:hover {
-        transform: scale(1.1);
+        align-items: center;
+        width: 95%;
     }
 
     .menu__grid__price {
-
+        margin-right: 5rem;
         text-align: right;
     }
 }
 
 @media(min-width:1000px) {
     .menu__grid {
-        grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
         margin: auto 10rem;
+    }
+
+    .menu__grid__container:hover {
+        transform: scale(1.1);
+    }
+
+    .menu__grid__container {
+
+        width: 100%;
     }
 }
 
@@ -335,8 +345,11 @@ a {
 .container__text {
     color: var(--primario);
     text-align: center;
+    font-weight: bolder;
+
 
 }
+
 
 .container {
     padding-top: 5rem;
@@ -409,6 +422,10 @@ a {
 }
 
 @media (min-width: 768px) {
+    .container__text {
+        font-size: 25px;
+    }
+
     .container__form {
         margin: 0 auto;
         width: 100%;
