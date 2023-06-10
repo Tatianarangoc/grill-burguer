@@ -257,8 +257,8 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    margin: auto 0;
-
+    margin: auto auto;
+    margin: 0 3rem;
 }
 
 
@@ -269,13 +269,12 @@ a {
     align-items: center;
     background-color: var(--blanco);
     padding: auto;
-    position: relative;
-    margin: 0 1rem;
     border-radius: 15px;
-    width: 85%;
+    width: 100%;
     align-items: center;
 
 }
+
 
 
 
