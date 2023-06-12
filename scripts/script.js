@@ -56,7 +56,8 @@ function required_info() {
     const tel = document.getElementById("tel")
     const text = document.getElementById("text")
     const emailvalidation = /^(.+@.+..+)$/;
-    if (nombre.value === "" || email.value === "" || tel.value === "" || text.value === "") {
+
+    if (nombre.value === "" || email.value === "" || text.value === "") {
         document.querySelector(".msj").innerHTML = "Debe rellenar todos los campos"
     } else if (!emailvalidation.test(email.value)) {
         document.querySelector(".msj").innerHTML = "Debe ingressar un email valido"
